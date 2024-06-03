@@ -7,9 +7,75 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/Assests/Css/Style.css">
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+.w3-row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px; /* Adjust the gap as needed */
+    }
+
+    .company-name {
+        font-family: 'Arial', sans-serif;
+        font-size: 3em;
+        font-weight: bold;
+        color: #4CAF50;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .founders-title {
+        font-family: 'Arial', sans-serif;
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #333;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+    }
+
+    .founder-card {
+        flex: 1;
+        max-width: 35%;
+        background: #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease-in-out;
+        margin: 16px;
+        padding: 20px;
+        height: 45vh;
+
+    }
+
+    .founder-card:hover {
+        transform: scale(1.05);
+    }
+
+    .founder-img {
+        width: 100%;
+        border-radius: 50%;
+        margin-top: 15px;
+    }
+
+    .founder-name {
+        font-family: 'Georgia', serif;
+        font-size: 1em;
+        font-weight: bold;
+        color: #2C3E50;
+        margin-top: 15px;
+    }
+
+    .founder-title {
+        font-family: 'Georgia', serif;
+        font-size: 0.7em;
+        color: #7F8C8D;
+        margin-top: 5px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 </style>
 </head>
 <body>
@@ -42,93 +108,105 @@ body {font-family: "Lato", sans-serif}
 
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/la.jpg" style="width:100%">
+  <div class="mySlides w3-display-container w3-center ">
+    <img src="/Assests/Images/Back.jpg" style="width:100%" class="slider">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Los Angeles</h3>
-      <p><b>We had the best time playing at Venice Beach!</b></p>   
+      <h3>Crafting Digital Excellence</h3>
+      <p><b>"Transform your ideas into stunning websites with our top-tier web development services. We specialize in creating responsive, user-friendly, and visually appealing websites that drive engagement and deliver a seamless user experience. Our expertise spans from front-end to back-end development, ensuring your website is built with the latest technologies and best practices. Whether you need an e-commerce platform, a corporate site, or a custom web application, we've got you covered."</b></p>   
     </div>
   </div>
   <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/ny.jpg" style="width:100%">
+    <img src="/Assests/Images/sld.jpg" style="width:100%" class="slider">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>New York</h3>
-      <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
+      <h3>Empowering Mobile Innovation</h3>
+      <p><b>"Unlock the full potential of mobile technology with our expert Android development services. We design and develop robust, high-performance Android applications tailored to your business needs. Our team is proficient in the latest Android frameworks and tools, delivering apps that are not only functional but also provide a compelling user experience. From concept to deployment, we ensure your app stands out in the competitive mobile market."</b></p>    
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="/w3images/chicago.jpg" style="width:100%">
+  <div class="mySlides w3-display-container w3-center" class="slider">
+    <img src="/Assests/Images/sld1.jfif" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h3>Chicago</h3>
-      <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
+      <h3>Elevate Your Online Presence</h3>
+      <p><b>"Boost your website’s visibility and drive organic traffic with our comprehensive SEO services. Our SEO experts employ cutting-edge strategies to improve your search engine rankings, ensuring your business reaches the right audience. We offer on-page and off-page optimization, keyword research, content creation, and technical SEO to enhance your site’s performance. With our SEO services, you can achieve sustained growth and a competitive edge in the digital landscape."</b></p>    
     </div>
   </div>
 
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-    <h2 class="w3-wide">THE BAND</h2>
+    <h2 class="company-name">Company Name</h2>
     <p class="w3-opacity"><i>We love music</i></p>
     <p class="w3-justify">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
       ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
       adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round w3-margin-bottom" alt="Random Name" style="width:60%">
-      </div>
-      <div class="w3-third">
-        <p>Name</p>
-        <img src="/w3images/bandmember.jpg" class="w3-round" alt="Random Name" style="width:60%">
-      </div>
+    <h1 class="founders-title">Founders</h1>
+    <div class="w3-row w3-padding-32 w3-center">
+        <div class="founder-card w3-card-4 w3-round">
+            <img src="/Assests/Images/Avtar.avif" alt="Muhammad Umer Mukhtiar" class="founder-img">
+            <div class="w3-container w3-padding-16">
+                <h6 class="founder-name">Muhammad Umer Mukhtiar</h6>
+                <p class="founder-title">CEO & Co-Founder</p>
+            </div>
+        </div>
+        <div class="founder-card w3-card-4 w3-round">
+            <img src="/Assests/Images/Avtar.avif" alt=" " class="founder-img">
+            <div class="w3-container w3-padding-16">
+                <h3 class="founder-name">Name</h3>
+                <p class="founder-title">CTO & Co-Founder</p>
+            </div>
+        </div>
+        <div class="founder-card w3-card-4 w3-round">
+            <img src="/Assests/Images/Avtar.avif" alt="Third Founder" class="founder-img">
+            <div class="w3-container w3-padding-16">
+                <h3 class="founder-name">Third Founder</h3>
+                <p class="founder-title">COO & Co-Founder</p>
+            </div>
+        </div>
     </div>
-  </div>
-
+</div>
   <!-- The Tour Section -->
   <div class="w3-black" id="tour">
     <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
-      <h2 class="w3-wide w3-center">TOUR DATES</h2>
-      <p class="w3-opacity w3-center"><i>Remember to book your tickets!</i></p><br>
+        <h2 class="w3-wide w3-center">Book Appointments</h2>
+        <p class="w3-center w3-large">Let's Start Working Together</p>
+        <div class="w3-center w3-margin-top">
+            <button class="w3-button   btt  w3-padding-large  ">Let's Talk</button>
+        </div>
 
-      <ul class="w3-ul w3-border w3-white w3-text-grey">
-        <li class="w3-padding">September <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">October <span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
-        <li class="w3-padding">November <span class="w3-badge w3-right w3-margin-right">3</span></li>
-      </ul>
-
-      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/newyork.jpg" alt="New York" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>New York</b></p>
-            <p class="w3-opacity">Fri 27 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
+        <div class="w3-row-padding w3-padding-32" style="margin:0 -16px; display: flex; flex-wrap: wrap;">
+            <div class="w3-third w3-margin-bottom" style="display: flex;">
+                <div class="w3-card-4 w3-hover-shadow" style="flex: 1; display: flex; flex-direction: column;">
+                    <img src="/w3images/newyork.jpg" alt="New York" style="width:100%; flex: 0 0 auto;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white" style="flex: 1 1 auto; display: flex; flex-direction: column;">
+                        <h3>Web Development</h3>
+                        <p class="w3-opacity">Fri 27 Nov 2016</p>
+                        <p style="flex: 1 1 auto;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom w3-hover-red" style="flex: 0 0 auto;">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom" style="display: flex;">
+                <div class="w3-card-4 w3-hover-shadow" style="flex: 1; display: flex; flex-direction: column;">
+                    <img src="/w3images/paris.jpg" alt="Paris" style="width:100%; flex: 0 0 auto;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white" style="flex: 1 1 auto; display: flex; flex-direction: column;">
+                        <h3>Web Development</h3>
+                        <p class="w3-opacity">Sat 28 Nov 2016</p>
+                        <p style="flex: 1 1 auto;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom w3-hover-red" style="flex: 0 0 auto;">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-margin-bottom" style="display: flex;">
+                <div class="w3-card-4 w3-hover-shadow" style="flex: 1; display: flex; flex-direction: column;">
+                    <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%; flex: 0 0 auto;" class="w3-hover-opacity">
+                    <div class="w3-container w3-white" style="flex: 1 1 auto; display: flex; flex-direction: column;">
+                        <h3>Android Development</h3>
+                        <p class="w3-opacity">Sun 29 Nov 2016</p>
+                        <p style="flex: 1 1 auto;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="w3-button w3-black w3-margin-bottom w3-hover-red" style="flex: 0 0 auto;">View Project</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/paris.jpg" alt="Paris" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>Paris</b></p>
-            <p class="w3-opacity">Sat 28 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-third w3-margin-bottom">
-          <img src="/w3images/sanfran.jpg" alt="San Francisco" style="width:100%" class="w3-hover-opacity">
-          <div class="w3-container w3-white">
-            <p><b>San Francisco</b></p>
-            <p class="w3-opacity">Sun 29 Nov 2016</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
   <!-- Ticket Modal -->
   <div id="ticketModal" class="w3-modal">
@@ -155,27 +233,30 @@ body {font-family: "Lato", sans-serif}
     <h2 class="w3-wide w3-center">CONTACT</h2>
     <p class="w3-opacity w3-center"><i>Fan? Drop a note!</i></p>
     <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker" style="width:30px"></i> Chicago, US<br>
-        <i class="fa fa-phone" style="width:30px"></i> Phone: +00 151515<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
-      </div>
-      <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
-          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+        <div class="w3-col m6 w3-margin-bottom">
+            <div class="w3-container w3-padding-16">
+                <p class="w3-large"><i class="fa fa-map-marker fa-fw w3-margin-right w3-large w3-text-teal"></i>Chicago, US</p>
+                <p class="w3-large"><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Phone: +00 151515</p>
+                <p class="w3-large"><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Email: mail@mail.com</p>
             </div>
-            <div class="w3-half">
-              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-            </div>
-          </div>
-          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
-        </form>
-      </div>
+        </div>
+        <div class="w3-col m6">
+            <form action="/action_page.php" target="_blank">
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                    </div>
+                    <div class="w3-half">
+                        <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                    </div>
+                </div>
+                <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+            </form>
+        </div>
     </div>
-  </div>
+</div>
+
   
 <!-- End Page Content -->
 </div>
