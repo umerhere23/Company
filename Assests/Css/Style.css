@@ -401,5 +401,8 @@
     .w3-right {
       padding-right: 16px; /* Adjust padding as needed */
     }
+    .slider{
+        height: 400px;
+    }
   }
   
