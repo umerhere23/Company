@@ -16,6 +16,7 @@
 
 .w3-card-4:hover {
     transform: scale(1.05);
+    border-radius: 3% 3%;
 }
 
 .w3-hover-shadow:hover {
@@ -23,7 +24,7 @@
 }
 
 .w3-hover-red:hover {
-    background-color: #f44336 !important;
+    background-color: #292727 !important;
 }
 .btt {
     background-color: #15a9df !important;
@@ -88,7 +89,7 @@
 }
 .content .left-side .details i{
   font-size: 30px;
-  color: #3e2093;
+  color: #222;
   margin-bottom: 10px;
 }
 .content .left-side .details .topic{
@@ -107,7 +108,7 @@
 .content .right-side .topic-text{
   font-size: 23px;
   font-weight: 600;
-  color: #3e2093;
+  color: #222;
 }
 .right-side .input-box{
   height: 50px;
@@ -143,12 +144,12 @@
   border: none;
   padding: 8px 16px;
   border-radius: 6px;
-  background: #3e2093;
+  background: #222;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #5029bc;
+  background: #222;
 }
 
 @media (max-width: 950px) {
@@ -196,7 +197,7 @@
     font-family: 'Arial', sans-serif;
     font-size: 3em;
     font-weight: bold;
-    color: #4CAF50;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 2px;
 }
@@ -264,6 +265,8 @@
     .founders-title {
         font-size: 2em;
     }
+
+ 
 }
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
@@ -384,3 +387,19 @@
     background-positon-x: 0px;
   }
 }
+/* Hide navigation demo on small screens */
+@media screen and (max-width: 600px) {
+    #navDemo {
+      display: none;
+    }
+    .logo {
+      padding-left: 16px; /* Adjust padding as needed */
+    }
+    .w3-bar {
+      justify-content: space-between;
+    }
+    .w3-right {
+      padding-right: 16px; /* Adjust padding as needed */
+    }
+  }
+  
